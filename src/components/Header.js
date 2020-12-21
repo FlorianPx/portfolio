@@ -2,14 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderDiv = styled.div`
-  display: none;
+  display: flex;
 `;
 
 const Nav = styled.div`
   background: #232233;
   height: 10vh;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -17,9 +18,7 @@ const Header = () => {
   return (
     <HeaderDiv>
       <Nav>
-        <button>Menu Burger</button>
         <img src="" alt="Logo de Florian Poux" />
-        <button>Switch light/dark</button>
       </Nav>
     </HeaderDiv>
   );

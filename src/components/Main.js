@@ -1,29 +1,37 @@
 import React from "react";
 import styled from "styled-components";
 
-import Logo from "../assets/logo.png";
+import { devices } from "../constants";
 
-const FirstDiv = styled.div`
+import LogoHome from "../assets/logo_home.png";
+
+const Wrapper = styled.section`
   display: flex;
   height: 100%;
-  margin: 0 6vw;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column-reverse;
+
+  @media screen(min-width: ${devices.tablet}px) {
+    flex-direction: row;
+  }
 `;
 
-const HeadTitle = styled.p`
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+const BlockText = styled.div`
+  margin-right: 3vw;
+  max-width: 740px;
+`;
+
+const HeadTitle = styled.h2`
+  font-size: 18px;
   color: #9d67f8;
-  margin: 0;
+  margin: 0 0 14px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
 `;
 
-const HeadDiv = styled.div`
+const Dash = styled.span`
   width: 78px;
   height: 5px;
   margin-right: 8px;
@@ -32,43 +40,41 @@ const HeadDiv = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: Recoleta;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "Recoleta", serif;
+  line-height: 50px;
   color: #ffffff;
   margin: 0;
+
+  @media screen(min-width: ${devices.tablet}px) {
+    font-size: 60px;
+    line-height: 70px;
+  }
 `;
 
 const Paragraph = styled.p`
-  font-family: SF Pro Text;
-  font-style: normal;
-  font-weight: 300;
   font-size: 18px;
-  line-height: 22px;
   color: #d7cbff;
-  margin-top: 8px;
-  width: 482px;
+  margin: 18px 0 0;
 `;
 
 const Main = () => {
   return (
-    <FirstDiv>
-      <div>
+    <Wrapper>
+      <BlockText>
         <HeadTitle>
-          <HeadDiv> </HeadDiv>Florian Poux
+          <Dash />
+          Florian Poux
         </HeadTitle>
-        <Title>
-          Hey ! Je m'appelle Florian,
-          <br /> et je suis développeur front.
-        </Title>
+        <Title>Hey ! Je m'appelle Florian, et je suis développeur front.</Title>
         <Paragraph>
           Étudiant React/Node.js à la Wild Code School de Bordeaux depuis
           septembre 2020.
         </Paragraph>
-      </div>
-      <img src={Logo} alt="Logo de Florian Poux" />
-    </FirstDiv>
+      </BlockText>
+      <img src={LogoHome} alt="Logo de Florian Poux" />
+    </Wrapper>
   );
 };
 
