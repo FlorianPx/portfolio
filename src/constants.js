@@ -1,4 +1,38 @@
+import frontIcon from "./assets/iconFront.png";
+import backIcon from "./assets/iconBack.png";
+
 export const cardArray = [
+  {
+    color: "#4C40F7",
+    src: frontIcon,
+    alt: "Logo Front",
+    title: "Front",
+    language: "React et JavaScript",
+    skills: [
+      "Création de class components",
+      "Création de functional components",
+      "Utilisation de hooks: useState, useEffect, useMemo, useHistory",
+      "Utilisation d'axios pour les appels API",
+      "Création d'un router avec react-router",
+    ],
+  },
+  {
+    color: "#9D67F8",
+    src: backIcon,
+    alt: "Logo Back",
+    title: "Back",
+    language: "Node.js et Express",
+    skills: [
+      "Création d'un serveur avec Express",
+      "Création d'une base de données avec mysql",
+      "Utilisation de l'outil Workbench",
+      "Utilisation de l'outil Postman",
+      "Utilisation de nodemon",
+    ],
+  },
+];
+
+export const projectArray = [
   {
     name: "Studio Photographie",
     stake: "Refonte du site internet pour un studio photographe.",
