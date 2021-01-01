@@ -1,43 +1,41 @@
 import React from "react";
-import Card from "./Card";
-
 import styled from "styled-components";
-import { cardArray } from "../../constants";
 
-const Wrapper = styled.section`
+import ProjectCard from "./ProjectCard";
+import { projectArray } from "../../constants";
+
+const Wrapper = styled.div`
   height: 100%;
 `;
-
-const CardH1 = styled.div`
+const Title = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90px;
   color: #ffffff;
   font-size: 50px;
+  font-weight: normal;
   font-family: Recoleta;
   margin-bottom: 30px;
 `;
 const Cards = styled.div`
   color: #ffffff;
   display: flex;
-  justify-content: center;
-  > :last-child {
-    margin-left: 80px;
-  }
+  flex-wrap: wrap;
+  justify-content: space-around;
 `;
 
-const Skills = () => {
+const Projects = () => {
   return (
     <Wrapper>
-      <CardH1>Compétences</CardH1>
+      <Title>Projets</Title>
       <Cards>
-        {cardArray.map((card, index) => (
-          <Card key={index} card={card} />
+        {projectArray.map((project, index) => (
+          <ProjectCard key={index} project={project} />
         ))}
       </Cards>
     </Wrapper>
   );
 };
 
-export default Skills;
+export default Projects;

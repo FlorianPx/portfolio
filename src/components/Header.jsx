@@ -1,26 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-
-const HeaderDiv = styled.div`
-  display: flex;
-`;
+import headLogo from "../assets/head.png";
 
 const Nav = styled.div`
-  background: #232233;
-  height: 10vh;
-  width: 100%;
+  position: fixed;
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 64px;
+  background: #232233;
+`;
+const Img = styled.img`
+  position: absolute;
 `;
 
 const Header = () => {
   return (
-    <HeaderDiv>
-      <Nav>
-        <img src="" alt="Logo de Florian Poux" />
-      </Nav>
-    </HeaderDiv>
+    <Nav>
+      <Img src={headLogo} alt="Logo de Florian Poux" />
+    </Nav>
   );
 };
 

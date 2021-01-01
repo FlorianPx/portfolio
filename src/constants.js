@@ -34,44 +34,51 @@ export const cardArray = [
 
 export const projectArray = [
   {
+    type: "Web",
     name: "Studio Photographie",
-    stake: "Refonte du site internet pour un studio photographe.",
-    duration: "2 semaines",
+    src: "",
+    alt: "Image du projet Studio Photographie",
+    description:
+      "Refonte du site internet pour un studio photographe en équipe de 4 personnes pendant 2 semaines.",
     tools: "HTML 5, CSS, JavaScript",
-    team: "Equipe composée de 4 personnes",
     href: "https://florianpx.github.io/Projet1-Photographie-/",
   },
   {
+    type: "Web App",
     name: "Mysterium",
-    stake: "Adaptation du jeu de société Mysterium en une application web.",
-    duration: "6 semaines",
-    tools: "React JS, CSS, Bootstrap",
-    team: "Equipe composée de 5 personnes",
+    src: "",
+    alt: "Image du projet Mysterium",
+    description:
+      "Adaptation du jeu de société en une application web en équipe de 5 personnes pendant 6 semaines.",
+    tools: "React JS, CSS",
     href: "Pas encore de données",
   },
   {
+    type: "Web App",
     name: "Hackathon européen",
-    stake: 'Thème donné "Retour vers le futur"',
-    duration: "24 heures",
+    src: "",
+    alt: "Image du projet Hackathon européen",
+    description: `Création d'une application avec le thème donné "Retour vers le futur" en équipe de 5 personnes durant 24h.`,
     tools: "React JS, Api Rest, Workbench, SQL",
-    team: "Equipe de 5 personnes",
     href: "Pas encore de données",
   },
   {
+    type: "Web App",
     name: "Neurolab",
-    stake:
-      "Création du site web Neurolab afin d'y intégrer leur application Unity",
-    duration: "9 semaines",
+    src: "",
+    alt: "Image du projet Neurolab",
+    description:
+      "Création du site web Neurolab afin d'y intégrer une application Unity en équipe de 5 personnes pendant 9 semaines.",
     tools: "HTML 5, CSS, JavaScript",
-    team: "Equipe de 5 personnes",
     href: "Pas encore de données",
   },
   {
+    type: "Web",
     name: "Portfolio",
-    stake: "Créer mon propre portfolio afin d'y exposer tous mes projets",
-    duration: "3 semaines",
+    src: "",
+    alt: "Image du projet Portfolio",
+    description: "Créer mon propre portfolio afin d'y exposer tous mes projets",
     tools: "React JS, Styled-components",
-    team: "Seul",
     href: "Pas encore de données",
   },
 ];
