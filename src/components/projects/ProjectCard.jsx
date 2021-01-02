@@ -38,11 +38,12 @@ const H1 = styled.h1`
 const Img = styled.img`
   display: flex;
   justify-content: center;
-  width: 340px;
-  height: 100px;
+  width: 330px;
+  height: 160px;
   background: #c4c4c4;
   border-radius: 15px;
   margin: 0 auto;
+  object-fit: cover;
 `;
 const Description = styled.p`
   font-family: Roboto;
