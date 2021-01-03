@@ -1,12 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 
+const Link = styled.a`
+  text-decoration: none;
+`;
+
 const GlobalDiv = styled.div`
   width: 345px;
   background: #222233;
   border-radius: 25px;
   margin-bottom: 50px;
   padding: 25px;
+  transition: background 0.5s ease-out;
+  &:hover {
+    background: #33334f;
+  }
 `;
 const Title = styled.div`
   display: flex;
@@ -15,7 +23,8 @@ const Title = styled.div`
 `;
 const H2 = styled.h2`
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: normal;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -61,18 +70,20 @@ const Tools = styled.p`
 
 const ProjectCard = ({ project }) => {
   return (
-    <GlobalDiv>
-      <Title>
-        <H2>
-          <Dash />
-          {project.type}
-        </H2>
-        <H1>{project.name}</H1>
-      </Title>
-      <Img src={project.src} alt={project.alt} />
-      <Description>{project.description}</Description>
-      <Tools>{project.tools}</Tools>
-    </GlobalDiv>
+    <Link href={project.url}>
+      <GlobalDiv>
+        <Title>
+          <H2>
+            <Dash />
+            {project.type}
+          </H2>
+          <H1>{project.name}</H1>
+        </Title>
+        <Img src={project.src} alt={project.alt} />
+        <Description>{project.description}</Description>
+        <Tools>{project.tools}</Tools>
+      </GlobalDiv>
+    </Link>
   );
 };
 

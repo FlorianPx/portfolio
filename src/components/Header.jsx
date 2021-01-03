@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import headLogo from "../assets/head.png";
+import headLogo from "../assets/logos/head.png";
 
 const Nav = styled.div`
   position: fixed;

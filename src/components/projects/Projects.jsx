@@ -4,9 +4,7 @@ import styled from "styled-components";
 import ProjectCard from "./ProjectCard";
 import { projectArray } from "../../constants";
 
-const Wrapper = styled.div`
-  height: 100%;
-`;
+const Wrapper = styled.section``;
 const Title = styled.h1`
   display: flex;
   justify-content: center;

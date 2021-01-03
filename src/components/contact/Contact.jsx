@@ -1,12 +1,10 @@
 import React from "react";
-import Card from "./Card";
-
 import styled from "styled-components";
-import { cardArray } from "../../constants";
 
-const Wrapper = styled.section``;
+import CardContact from "./CardContact";
+import { contactArray } from "../../constants";
 
-const CardH1 = styled.div`
+const CardH1 = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,25 +15,25 @@ const CardH1 = styled.div`
   margin-bottom: 30px;
 `;
 const Cards = styled.div`
-  color: #ffffff;
   display: flex;
   justify-content: center;
   > :last-child {
-    margin-left: 80px;
+    margin-left: 100px;
   }
+  color: #ffffff;
 `;
 
-const Skills = () => {
+const Contact = () => {
   return (
-    <Wrapper>
-      <CardH1>Compétences</CardH1>
+    <section id="contact">
+      <CardH1 id>Entrons en contact</CardH1>
       <Cards>
-        {cardArray.map((card, index) => (
-          <Card key={index} card={card} />
+        {contactArray.map((contact, index) => (
+          <CardContact key={index} contact={contact} />
         ))}
       </Cards>
-    </Wrapper>
+    </section>
   );
 };
 
-export default Skills;
+export default Contact;

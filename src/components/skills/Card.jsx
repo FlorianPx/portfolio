@@ -36,19 +36,20 @@ const Title = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 10px;
-  font-family: Recoleta;
 `;
 const H3 = styled.h3`
   color: ${({ color }) => color};
   font-size: 16px;
-  text-transform: uppercase;
+  font-family: Roboto;
   font-weight: normal;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   margin: 0;
 `;
 const H2 = styled.h2`
   font-size: 26px;
+  font-family: Recoleta;
   font-weight: normal;
   margin: 0;
 `;

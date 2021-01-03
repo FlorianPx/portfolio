@@ -3,17 +3,18 @@ import styled from "styled-components";
 
 import { devices } from "../constants";
 
-import LogoHome from "../assets/logo_home.png";
+import LogoHome from "../assets/logos/logo_home.png";
 
 const Wrapper = styled.section`
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
 
-  @media screen(min-width: ${devices.tablet}px) {
+  @media screen and (min-width: ${devices.tablet}px) {
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 `;
 

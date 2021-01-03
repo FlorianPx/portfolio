@@ -6,6 +6,7 @@ import "./App.css";
 import GlobalStyle from "./GlobalStyle";
 import Notification from "./components/Notification";
 import Projects from "./components/projects/Projects";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Main />
       <Skills />
       <Projects />
+      <Contact />
       <Notification />
     </div>
   );

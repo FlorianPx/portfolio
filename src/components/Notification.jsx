@@ -69,7 +69,7 @@ const Notification = () => {
       <Content isClicked={isClicked}>
         <Paragraph isClicked={isClicked}>
           Je recherche un stage en tant que développeur front.{" "}
-          <a>Contactez-moi</a>.
+          <a href="#contact">Contactez-moi</a>.
         </Paragraph>
       </Content>
     </>

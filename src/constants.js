@@ -1,5 +1,8 @@
-import frontIcon from "./assets/iconFront.png";
-import backIcon from "./assets/iconBack.png";
+import frontIcon from "./assets/logos/iconFront.png";
+import backIcon from "./assets/logos/iconBack.png";
+import email from "./assets/logos/mail.svg";
+import github from "./assets/logos/github.svg";
+import linkedin from "./assets/logos/linkedin.svg";
 import studioPhoto from "./assets/images/studioPhoto.png";
 import mysterium from "./assets/images/mysterium.png";
 import godsAndGold from "./assets/images/godsAndGold.png";
@@ -64,7 +67,7 @@ export const projectArray = [
     alt: "Image du projet Hackathon européen",
     description: `Création d'une application avec le thème donné "Retour vers le futur" en équipe de 5 personnes durant 24h.`,
     tools: "React JS, Api Rest, Workbench, SQL",
-    url: "Pas encore de données",
+    url: "/",
   },
   {
     type: "Web App",
@@ -74,7 +77,7 @@ export const projectArray = [
     description:
       "Création du site web Neurolab afin d'y intégrer une application Unity en équipe de 5 personnes pendant 9 semaines.",
     tools: "HTML 5, CSS, JavaScript",
-    url: "Pas encore de données",
+    url: "/",
   },
   {
     type: "Web",
@@ -83,7 +86,37 @@ export const projectArray = [
     alt: "Image du projet Portfolio",
     description: "Créer mon propre portfolio afin d'y exposer tous mes projets",
     tools: "React JS, Styled-components",
-    url: "Pas encore de données",
+    url: "/",
+  },
+];
+
+export const contactArray = [
+  {
+    color: "#8E86FF",
+    type: "Email",
+    items: [
+      {
+        logo: email,
+        title: "florian.poux@hotmail.fr",
+        url: "mailto:florian.poux@hotmail.fr",
+      },
+    ],
+  },
+  {
+    color: "#BD96FF",
+    type: "Réseaux",
+    items: [
+      {
+        logo: github,
+        title: "Github",
+        url: "https://github.com/FlorianPx",
+      },
+      {
+        logo: linkedin,
+        title: "LinkedIn",
+        url: "https://www.linkedin.com/in/florian-poux/",
+      },
+    ],
   },
 ];
 
