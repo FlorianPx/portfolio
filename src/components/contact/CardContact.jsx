@@ -20,18 +20,17 @@ const Dash = styled.div`
 `;
 const Subtitle = styled.h2`
   font-size: 16px;
-  font-family: Roboto;
   text-transform: uppercase;
   font-weight: normal;
   margin: 0;
 `;
-const DivLink = styled.div`
+const LinkGroup = styled.div`
   display: flex;
 `;
 const Link = styled.a`
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  ${({ isLastChild }) => !isLastChild && "margin-right: 20px;"}
   color: #ffffff;
   text-decoration: none;
 `;
@@ -46,14 +45,17 @@ const CardContact = ({ contact }) => {
         <Dash color={contact.color} />
         <Subtitle>{contact.type}</Subtitle>
       </Title>
-      <DivLink>
-        {contact.items.map((item) => (
-          <Link href={item.url}>
+      <LinkGroup>
+        {contact.items.map((item, index) => (
+          <Link
+            href={item.url}
+            isLastChild={contact.items.length === index + 1}
+          >
             <Img src={item.logo} />
             {item.title}
           </Link>
         ))}
-      </DivLink>
+      </LinkGroup>
     </Wrapper>
   );
 };

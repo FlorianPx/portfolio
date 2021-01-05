@@ -42,14 +42,32 @@ export const cardArray = [
 export const projectArray = [
   {
     type: "Web",
-    name: "Studio Photographie",
-    src: studioPhoto,
-    alt: "Image du projet Studio Photographie",
-    description:
-      "Refonte du site internet pour un studio photographe en équipe de 4 personnes pendant 2 semaines.",
-    tools: "HTML 5, CSS, JavaScript",
-    url: "https://florianpx.github.io/Projet1-Photographie-/",
+    name: "Portfolio",
+    src: portfolio,
+    alt: "Image du projet Portfolio",
+    description: "Créer mon propre portfolio afin d'y exposer tous mes projets",
+    tools: "React JS, Styled-components",
+    url: "/",
   },
+  // {
+  //   type: "Web App",
+  //   name: "Neurolab",
+  //   src: "",
+  //   alt: "Image du projet Neurolab",
+  //   description:
+  //     "Création du site web Neurolab afin d'y intégrer une application Unity en équipe de 5 personnes pendant 9 semaines.",
+  //   tools: "HTML 5, CSS, JavaScript",
+  //   url: "/",
+  // },
+  // {
+  //   type: "Web App",
+  //   name: "Hackathon européen",
+  //   src: godsAndGold,
+  //   alt: "Image du projet Hackathon européen",
+  //   description: `Création d'une application avec le thème donné "Retour vers le futur" en équipe de 5 personnes durant 24h.`,
+  //   tools: "React JS, Api Rest, Workbench, SQL",
+  //   url: "/",
+  // },
   {
     type: "Web App",
     name: "Mysterium",
@@ -61,32 +79,14 @@ export const projectArray = [
     url: "https://mysterium-app.herokuapp.com/",
   },
   {
-    type: "Web App",
-    name: "Hackathon européen",
-    src: godsAndGold,
-    alt: "Image du projet Hackathon européen",
-    description: `Création d'une application avec le thème donné "Retour vers le futur" en équipe de 5 personnes durant 24h.`,
-    tools: "React JS, Api Rest, Workbench, SQL",
-    url: "/",
-  },
-  {
-    type: "Web App",
-    name: "Neurolab",
-    src: "",
-    alt: "Image du projet Neurolab",
-    description:
-      "Création du site web Neurolab afin d'y intégrer une application Unity en équipe de 5 personnes pendant 9 semaines.",
-    tools: "HTML 5, CSS, JavaScript",
-    url: "/",
-  },
-  {
     type: "Web",
-    name: "Portfolio",
-    src: portfolio,
-    alt: "Image du projet Portfolio",
-    description: "Créer mon propre portfolio afin d'y exposer tous mes projets",
-    tools: "React JS, Styled-components",
-    url: "/",
+    name: "Studio Photographie",
+    src: studioPhoto,
+    alt: "Image du projet Studio Photographie",
+    description:
+      "Refonte du site internet pour un studio photographe en équipe de 4 personnes pendant 2 semaines.",
+    tools: "HTML 5, CSS, JavaScript",
+    url: "https://florianpx.github.io/Projet1-Photographie-/",
   },
 ];
 
@@ -121,5 +121,5 @@ export const contactArray = [
 ];
 
 export const devices = {
-  tablet: 768,
+  tablet: 930,
 };

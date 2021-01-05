@@ -7,6 +7,7 @@ const Link = styled.a`
 
 const GlobalDiv = styled.div`
   width: 345px;
+  min-height: 350px;
   background: #222233;
   border-radius: 25px;
   margin-bottom: 50px;
@@ -22,9 +23,7 @@ const Title = styled.div`
   margin-left: 10px;
 `;
 const H2 = styled.h2`
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: normal;
+  font-size: 14px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -55,13 +54,11 @@ const Img = styled.img`
   object-fit: cover;
 `;
 const Description = styled.p`
-  font-family: Roboto;
   font-size: 16px;
   color: #ffffff;
   margin: 15px 0 20px 0;
 `;
 const Tools = styled.p`
-  font-family: Roboto;
   font-style: italic;
   font-size: 14px;
   color: #ffffff;

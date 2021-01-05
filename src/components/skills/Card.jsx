@@ -39,9 +39,7 @@ const Title = styled.div`
 `;
 const H3 = styled.h3`
   color: ${({ color }) => color};
-  font-size: 16px;
-  font-family: Roboto;
-  font-weight: normal;
+  font-size: 14px;
   text-transform: uppercase;
   display: flex;
   align-items: center;

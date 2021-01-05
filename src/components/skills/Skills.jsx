@@ -2,39 +2,41 @@ import React from "react";
 import Card from "./Card";
 
 import styled from "styled-components";
-import { cardArray } from "../../constants";
+import { cardArray, devices } from "../../constants";
+import Title from "../common/Title";
+import Section from "../common/Section";
 
-const Wrapper = styled.section``;
-
-const CardH1 = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90px;
-  color: #ffffff;
-  font-size: 50px;
-  font-family: Recoleta;
-  margin-bottom: 30px;
-`;
 const Cards = styled.div`
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
   > :last-child {
-    margin-left: 80px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: ${devices.tablet}px) {
+    flex-direction: row;
+    > :last-child {
+      margin-left: 80px;
+      margin-top: 0;
+    }
   }
 `;
 
 const Skills = () => {
   return (
-    <Wrapper>
-      <CardH1>Compétences</CardH1>
+    <Section>
+      <Title>Compétences</Title>
       <Cards>
         {cardArray.map((card, index) => (
           <Card key={index} card={card} />
         ))}
       </Cards>
-    </Wrapper>
+    </Section>
   );
 };
 

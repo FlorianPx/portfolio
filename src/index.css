@@ -2,30 +2,35 @@ html,
 #root,
 .App {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 @font-face {
   font-family: "Recoleta";
   src: url("./assets/fonts/Recoleta.woff2") format("woff2"),
     url("./assets/fonts/Recoleta.woff") format("woff");
+  font-weight: normal;
 }
+
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/fonts/Roboto-Regular.woff") format("woff");
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Regular.woff") format("woff"),
+    url("./assets/fonts/Inter-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/fonts/Roboto-Bold.woff") format("woff");
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-SemiBold.woff") format("woff"),
+    url("./assets/fonts/Inter-SemiBold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #1f1a30;

@@ -48,6 +48,9 @@ const Paragraph = styled.p`
   transition: all 0.3s ease-in ${({ isClicked }) => (isClicked ? "0.2" : "0")}s;
   transition-property: opacity, visibility;
 `;
+const Link = styled.a`
+  color: currentColor;
+`;
 
 const Notification = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -69,7 +72,7 @@ const Notification = () => {
       <Content isClicked={isClicked}>
         <Paragraph isClicked={isClicked}>
           Je recherche un stage en tant que développeur front.{" "}
-          <a href="#contact">Contactez-moi</a>.
+          <Link href="#contact">Contactez-moi</Link>.
         </Paragraph>
       </Content>
     </>

@@ -3,24 +3,22 @@ import styled from "styled-components";
 
 import ProjectCard from "./ProjectCard";
 import { projectArray } from "../../constants";
+import Title from "../common/Title";
+import Section from "../common/Section";
 
-const Wrapper = styled.section``;
-const Title = styled.h1`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90px;
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: normal;
-  font-family: Recoleta;
-  margin-bottom: 30px;
+const Wrapper = styled(Section)`
+  height: auto;
 `;
+
 const Cards = styled.div`
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+
+  > a {
+    margin: 0 40px;
+  }
 `;
 
 const Projects = () => {

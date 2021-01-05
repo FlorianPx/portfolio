@@ -2,37 +2,47 @@ import React from "react";
 import styled from "styled-components";
 
 import CardContact from "./CardContact";
-import { contactArray } from "../../constants";
+import { contactArray, devices } from "../../constants";
+import Title from "../common/Title";
+import Section from "../common/Section";
 
-const CardH1 = styled.h1`
+const Wrapper = styled(Section)`
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 90px;
-  color: #ffffff;
-  font-size: 50px;
-  font-family: Recoleta;
-  margin-bottom: 30px;
 `;
+
 const Cards = styled.div`
   display: flex;
-  justify-content: center;
-  > :last-child {
-    margin-left: 100px;
-  }
+  flex-direction: column;
   color: #ffffff;
+  margin: 0 auto;
+
+  > :last-child {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: ${devices.tablet}px) {
+    flex-direction: row;
+
+    > :last-child {
+      margin-left: 80px;
+      margin-top: 0;
+    }
+  }
 `;
 
 const Contact = () => {
   return (
-    <section id="contact">
-      <CardH1 id>Entrons en contact</CardH1>
+    <Wrapper id="contact">
+      <Title>Entrons en contact</Title>
       <Cards>
         {contactArray.map((contact, index) => (
           <CardContact key={index} contact={contact} />
         ))}
       </Cards>
-    </section>
+    </Wrapper>
   );
 };
 

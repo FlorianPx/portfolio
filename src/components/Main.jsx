@@ -4,8 +4,9 @@ import styled from "styled-components";
 import { devices } from "../constants";
 
 import LogoHome from "../assets/logos/logo_home.png";
+import Section from "./common/Section";
 
-const Wrapper = styled.section`
+const Wrapper = styled(Section)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +63,7 @@ const Paragraph = styled.p`
 
 const Main = () => {
   return (
-    <Wrapper>
+    <Wrapper id="main">
       <BlockText>
         <HeadTitle>
           <Dash />
