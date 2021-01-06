@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import headLogo from "../assets/logos/head.png";
+import surprisedLogo from "../assets/logos/surprised.png";
 
 const Nav = styled.div`
   position: fixed;
@@ -20,6 +21,7 @@ const Link = styled.a`
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
+  const [showSuprisedFace, setShowSuprisedFace] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -29,11 +31,17 @@ const Header = () => {
         setShowNav(false);
       }
     });
+    document.getElementById(() => {});
   });
   return (
     <Nav showNav={showNav}>
       <Link href="#main">
-        <img src={headLogo} alt="Logo de Florian Poux" />
+        <img
+          src={showSuprisedFace ? surprisedLogo : headLogo}
+          alt="Logo de Florian Poux"
+          onMouseEnter={() => setShowSuprisedFace(true)}
+          onMouseLeave={() => setShowSuprisedFace(false)}
+        />
       </Link>
     </Nav>
   );
