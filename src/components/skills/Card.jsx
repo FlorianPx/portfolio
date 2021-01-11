@@ -24,8 +24,8 @@ const Dash = styled.div`
 `;
 const CardOne = styled.div`
   background-color: #222233;
-  width: 385px;
-  height: 370px;
+  width: 400px;
+  height: 380px;
   border-radius: 25px;
 `;
 const CardHeader = styled.div`

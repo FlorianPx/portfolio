@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { devices } from "../constants";
 
 import LogoHome from "../assets/logos/logo_home.png";
+import LogoHome2 from "../assets/logos/logo_home@2x.png";
 import Section from "./common/Section";
 
 const Wrapper = styled(Section)`
@@ -75,7 +76,11 @@ const Main = () => {
           septembre 2020.
         </Paragraph>
       </BlockText>
-      <img src={LogoHome} alt="Logo de Florian Poux" />
+      <img
+        src={LogoHome}
+        srcSet={`${LogoHome} 1x, ${LogoHome2} 2x`}
+        alt="Logo de Florian Poux"
+      />
     </Wrapper>
   );
 };

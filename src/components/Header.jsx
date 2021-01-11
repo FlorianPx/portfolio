@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import headLogo from "../assets/logos/head.png";
+import headLogo2 from "../assets/logos/head@2x.png";
 import surprisedLogo from "../assets/logos/surprised.png";
+import surprisedLogo2 from "../assets/logos/surprised@2x.png";
 
 const Nav = styled.div`
   position: fixed;
@@ -33,11 +35,17 @@ const Header = () => {
     });
     document.getElementById(() => {});
   });
+
   return (
     <Nav showNav={showNav}>
       <Link href="#main">
         <img
           src={showSuprisedFace ? surprisedLogo : headLogo}
+          srcSet={
+            showSuprisedFace
+              ? `${surprisedLogo} 1x, ${surprisedLogo2} 2x`
+              : `${headLogo} 1x, ${headLogo2} 2x`
+          }
           alt="Logo de Florian Poux"
           onMouseEnter={() => setShowSuprisedFace(true)}
           onMouseLeave={() => setShowSuprisedFace(false)}

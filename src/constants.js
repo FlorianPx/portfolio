@@ -1,39 +1,39 @@
-import frontIcon from "./assets/logos/iconFront.png";
-import backIcon from "./assets/logos/iconBack.png";
+import reactIcon from "./assets/logos/reactIcon.svg";
+import nodeIcon from "./assets/logos/nodeIcon.svg";
 import email from "./assets/logos/mail.svg";
 import github from "./assets/logos/github.svg";
 import linkedin from "./assets/logos/linkedin.svg";
 import studioPhoto from "./assets/images/studioPhoto.png";
 import mysterium from "./assets/images/mysterium.png";
-import godsAndGold from "./assets/images/godsAndGold.png";
+// import godsAndGold from "./assets/images/godsAndGold.png";
 import portfolio from "./assets/images/portfolio.png";
 
 export const cardArray = [
   {
     color: "#4C40F7",
-    src: frontIcon,
+    src: reactIcon,
     alt: "Logo Front",
     title: "Front",
     language: "React et JavaScript",
     skills: [
-      "Création de class components",
-      "Création de functional components",
-      "Utilisation de hooks: useState, useEffect, useMemo, useHistory",
-      "Utilisation d'axios pour les appels API",
-      "Création d'un router avec react-router",
+      "Création de class et functional components",
+      "Utilisation des hooks: useState, useEffect, useMemo",
+      "Utilisation de différentes librairies : axios, styled-components, react-router",
+      "Création d'un store avec la librairie Redux",
+      "Intégration en HTML et CSS",
     ],
   },
   {
     color: "#9D67F8",
-    src: backIcon,
+    src: nodeIcon,
     alt: "Logo Back",
     title: "Back",
     language: "Node.js et Express",
     skills: [
       "Création d'un serveur avec Express",
-      "Création d'une base de données avec mysql",
-      "Utilisation de l'outil Workbench",
-      "Utilisation de l'outil Postman",
+      "Création d'une base de données en SQL avec MySQL",
+      "Création d'une API REST",
+      "Utilisation de différents outils comme Workbench et Postman",
       "Utilisation de nodemon",
     ],
   },
@@ -47,7 +47,7 @@ export const projectArray = [
     alt: "Image du projet Portfolio",
     description: "Créer mon propre portfolio afin d'y exposer tous mes projets",
     tools: "React JS, Styled-components",
-    url: "/",
+    url: "https://florianpx.github.io/portfolio/",
   },
   // {
   //   type: "Web App",
@@ -86,7 +86,7 @@ export const projectArray = [
     description:
       "Refonte du site internet pour un studio photographe en équipe de 4 personnes pendant 2 semaines.",
     tools: "HTML 5, CSS, JavaScript",
-    url: "https://florianpx.github.io/Projet1-Photographie-/",
+    url: "https://florianpx.github.io/studio-photographie/",
   },
 ];
 
