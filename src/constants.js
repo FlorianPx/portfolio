@@ -1,5 +1,7 @@
-import reactIcon from "./assets/logos/reactIcon.svg";
-import nodeIcon from "./assets/logos/nodeIcon.svg";
+import reactIcon from "./assets/logos/reactIcon.png";
+import reactIcon2x from "./assets/logos/reactIcon2x.png";
+import nodeIcon from "./assets/logos/nodeIcon.png";
+import nodeIcon2x from "./assets/logos/nodeIcon2x.png";
 import email from "./assets/logos/mail.svg";
 import github from "./assets/logos/github.svg";
 import linkedin from "./assets/logos/linkedin.svg";
@@ -12,6 +14,7 @@ export const cardArray = [
   {
     color: "#4C40F7",
     src: reactIcon,
+    srcSet: `${reactIcon} 1x, ${reactIcon2x} 2x`,
     alt: "Logo Front",
     title: "Front",
     language: "React et JavaScript",
@@ -26,6 +29,7 @@ export const cardArray = [
   {
     color: "#9D67F8",
     src: nodeIcon,
+    srcSet: `${nodeIcon} 1x, ${nodeIcon2x} 2x`,
     alt: "Logo Back",
     title: "Back",
     language: "Node.js et Express",

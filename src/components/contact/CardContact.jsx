@@ -49,6 +49,7 @@ const CardContact = ({ contact }) => {
         {contact.items.map((item, index) => (
           <Link
             href={item.url}
+            key={`link_${index}`}
             isLastChild={contact.items.length === index + 1}
           >
             <Img src={item.logo} />

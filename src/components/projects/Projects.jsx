@@ -27,7 +27,7 @@ const Projects = () => {
       <Title>Projets</Title>
       <Cards>
         {projectArray.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <ProjectCard key={`project_${index}`} project={project} />
         ))}
       </Cards>
     </Wrapper>

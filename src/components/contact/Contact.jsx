@@ -39,7 +39,7 @@ const Contact = () => {
       <Title>Entrons en contact</Title>
       <Cards>
         {contactArray.map((contact, index) => (
-          <CardContact key={index} contact={contact} />
+          <CardContact key={`contact_${index}`} contact={contact} />
         ))}
       </Cards>
     </Wrapper>

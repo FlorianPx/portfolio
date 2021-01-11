@@ -63,7 +63,7 @@ const Card = ({ card }) => {
       <CardOne>
         <CardHeader>
           <BackgroundLogo color={card.color}>
-            <img src={card.src} alt={card.alt} />
+            <img src={card.src} srcSet={card.srcSet} alt={card.alt} />
           </BackgroundLogo>
           <Title>
             <H3 color={card.color}>
@@ -74,8 +74,8 @@ const Card = ({ card }) => {
           </Title>
         </CardHeader>
         <ul>
-          {card.skills.map((skill) => (
-            <List>{skill}</List>
+          {card.skills.map((skill, index) => (
+            <List key={`skill_${card.title}_${index}`}>{skill}</List>
           ))}
         </ul>
       </CardOne>

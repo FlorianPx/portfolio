@@ -33,7 +33,7 @@ const Skills = () => {
       <Title>Compétences</Title>
       <Cards>
         {cardArray.map((card, index) => (
-          <Card key={index} card={card} />
+          <Card key={`skill_${index}`} card={card} />
         ))}
       </Cards>
     </Section>
