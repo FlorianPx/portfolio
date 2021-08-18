@@ -72,8 +72,9 @@ const Main = () => {
         </HeadTitle>
         <Title>Hey ! Je m'appelle Florian, et je suis développeur front.</Title>
         <Paragraph>
-          Étudiant React/Node.js à la Wild Code School de Bordeaux depuis
-          septembre 2020.
+          Stagiaire dans l'entreprise TimeOne - Performance <br />
+          et anciennement étudiant React/Node.js à la Wild Code School de
+          Bordeaux.
         </Paragraph>
       </BlockText>
       <img

@@ -71,7 +71,7 @@ const Notification = () => {
       </BackgroundLogo>
       <Content isClicked={isClicked}>
         <Paragraph isClicked={isClicked}>
-          Je recherche un stage en tant que développeur front.{" "}
+          Je recherche un poste en tant que développeur front.{" "}
           <Link href="#contact">Contactez-moi</Link>.
         </Paragraph>
       </Content>
