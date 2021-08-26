@@ -70,11 +70,14 @@ const Main = () => {
           <Dash />
           Florian Poux
         </HeadTitle>
-        <Title>Hey ! Je m'appelle Florian, et je suis développeur front.</Title>
+        <Title>
+          Hey ! Je m'appelle Florian, et je suis développeur front-end junior.
+        </Title>
         <Paragraph>
-          Stagiaire dans l'entreprise TimeOne - Performance <br />
-          et anciennement étudiant React/Node.js à la Wild Code School de
-          Bordeaux.
+          Ancien étudiant React/Node.js à la Wild Code School de Bordeaux et{" "}
+          <br /> finissant tout juste mon stage dans l'entreprise TimeOne -
+          Performance, <br />
+          je suis pleinement à l'écoute du marché du travail.
         </Paragraph>
       </BlockText>
       <img

@@ -67,7 +67,7 @@ const Tools = styled.p`
 
 const ProjectCard = ({ project }) => {
   return (
-    <Link href={project.url}>
+    <Link href={project.url} target="_blank">
       <GlobalDiv>
         <Title>
           <H2>

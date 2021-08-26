@@ -9,6 +9,7 @@ import studioPhoto from "./assets/images/studioPhoto.png";
 import mysterium from "./assets/images/mysterium.png";
 // import godsAndGold from "./assets/images/godsAndGold.png";
 import portfolio from "./assets/images/portfolio.png";
+import lerevegourmand from "./assets/images/lerevegourmand.png";
 
 export const cardArray = [
   {
@@ -46,11 +47,22 @@ export const cardArray = [
 export const projectArray = [
   {
     type: "Web",
+    name: "Le Rêve Gourmand",
+    src: lerevegourmand,
+    alt: 'Représentation du projet "Le Rêve Gourmand"',
+    description:
+      'Conception du site internet pour le food truck "Le Rêve Gourmand"',
+    tools: "React JS, Styled-components, Figma",
+    url: "https://lerevegourmand.fr/",
+  },
+  {
+    type: "Web",
     name: "Portfolio",
     src: portfolio,
-    alt: "Image du projet Portfolio",
-    description: "Créer mon propre portfolio afin d'y exposer tous mes projets",
-    tools: "React JS, Styled-components",
+    alt: 'Représentation du projet "Portfolio"',
+    description:
+      "Développement de mon portfolio afin d'y exposer tous mes projets.",
+    tools: "React JS, Styled-components, Figma",
     url: "https://florianpx.github.io/portfolio/",
   },
   // {
@@ -64,7 +76,7 @@ export const projectArray = [
   // },
   // {
   //   type: "Web App",
-  //   name: "",
+  //   name: "GodsAndGold",
   //   src: ,
   //   alt: "Image du projet ",
   //   description: "Création d'une application avec le thème donné "Retour vers le futur" en équipe de 5 personnes durant 48h.",
@@ -94,9 +106,9 @@ export const projectArray = [
     type: "Web App",
     name: "Mysterium",
     src: mysterium,
-    alt: "Image du projet Mysterium",
+    alt: 'Représentation du projet "Mysterium"',
     description:
-      "Adaptation du jeu de société en une application web en équipe de 5 personnes pendant 6 semaines.",
+      "Adaptation du jeu de société en une application web en équipe de 5 personnes durant 6 semaines.",
     tools: "React JS, CSS",
     url: "https://mysterium-app.herokuapp.com/",
   },
@@ -104,9 +116,9 @@ export const projectArray = [
     type: "Web",
     name: "Studio Photographie",
     src: studioPhoto,
-    alt: "Image du projet Studio Photographie",
+    alt: 'Représentation du projet "Photographie"',
     description:
-      "Refonte du site internet pour un studio photographe en équipe de 4 personnes pendant 2 semaines.",
+      "Refonte du site internet pour un studio photographe en équipe de 4 personnes durant 2 semaines.",
     tools: "HTML 5, CSS, JavaScript",
     url: "https://florianpx.github.io/studio-photographie/",
   },
