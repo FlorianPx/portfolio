@@ -47,7 +47,7 @@ const Content = styled.div`
   bottom: 20px;
   right: 20px;
   height: 62px;
-  width: ${({ isClicked }) => (isClicked ? "360" : "62")}px;
+  width: ${({ isClicked }) => (isClicked ? "374" : "62")}px;
   display: flex;
   align-items: center;
   background: #ffffff;
@@ -56,7 +56,7 @@ const Content = styled.div`
   transition-property: width, padding;
 `;
 const Paragraph = styled.p`
-  max-width: 262px;
+  max-width: 280px;
   margin: 0;
   visibility: ${({ isClicked }) => (isClicked ? "visible" : "hidden")};
   opacity: ${({ isClicked }) => (isClicked ? "1" : "0")};
@@ -114,8 +114,9 @@ const Notification = () => {
           hasBeenClickBullet={hasBeenClickBullet}
         />
         <Paragraph onClick={handleChange} isClicked={isClicked}>
-          Je recherche un poste en tant que développeur front.{" "}
-          <Link href="#contact">Contactez-moi</Link>
+          Si mon profil vous suscite un intérêt, n'hésitez pas.{" "}
+          <Link href="#contact">Contactez-moi !</Link>
+          <span> 😁</span>
         </Paragraph>
       </Content>
     </>

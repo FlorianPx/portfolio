@@ -74,10 +74,11 @@ const Main = () => {
           Hey ! Je m'appelle Florian, et je suis développeur front-end junior.
         </Title>
         <Paragraph>
-          Ancien étudiant React/Node.js à la Wild Code School de Bordeaux et{" "}
-          <br /> finissant tout juste mon stage dans l'entreprise TimeOne -
-          Performance, <br />
-          je suis pleinement à l'écoute du marché du travail.
+          Ayant reçu la certification de développeur React/Node.js par la Wild
+          Code School de Bordeaux et terminé mon stage dans l'entreprise TimeOne
+          - Performance de Pessac;
+          <br />
+          je suis pleinement à l'écoute de nouvelles opportunités.
         </Paragraph>
       </BlockText>
       <img
