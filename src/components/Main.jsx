@@ -74,11 +74,11 @@ const Main = () => {
           Hey ! Je m'appelle Florian, et je suis développeur front-end junior.
         </Title>
         <Paragraph>
-          Ayant reçu la certification de développeur React/Node.js par la Wild
-          Code School de Bordeaux et terminé mon stage dans l'entreprise TimeOne
-          - Performance de Pessac;
+          Après avoir reçu la certification de développeur React/Node.js à la
+          Wild Code School de Bordeaux et réalisé un stage dans l'entreprise
+          TimeOne Performance de Pessac;
           <br />
-          je suis pleinement à l'écoute de nouvelles opportunités.
+          je suis actuellement en CDI dans l'agence web Eenov.
         </Paragraph>
       </BlockText>
       <img

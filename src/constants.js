@@ -21,8 +21,8 @@ export const cardArray = [
     language: "React et JavaScript",
     skills: [
       "Création de class et functional components",
-      "Utilisation des hooks: useState, useEffect, useMemo",
-      "Utilisation de différentes librairies : axios, styled-components, react-router",
+      "Utilisation des hooks: useState, useEffect, useMemo, useContext",
+      "Utilisation des librairies : styled-components, headless ui, tailwind",
       "Création d'un store avec la librairie Redux",
       "Intégration en HTML et CSS",
     ],

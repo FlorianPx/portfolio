@@ -86,6 +86,10 @@ const Notification = () => {
     }
   };
 
+  if (isClicked) {
+    setTimeout(() => setIsClicked(false), 4000);
+  }
+
   const handleChange = () => {
     if (!hasBeenClickBullet) {
       setHasBeenClickBullet("true");
