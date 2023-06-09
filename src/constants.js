@@ -5,11 +5,16 @@ import nodeIcon2x from "./assets/logos/nodeIcon2x.png";
 import email from "./assets/logos/mail.svg";
 import github from "./assets/logos/github.svg";
 import linkedin from "./assets/logos/linkedin.svg";
-import studioPhoto from "./assets/images/studioPhoto.png";
-import mysterium from "./assets/images/mysterium.png";
-// import godsAndGold from "./assets/images/godsAndGold.png";
-import portfolio from "./assets/images/portfolio.png";
+
 import lerevegourmand from "./assets/images/lerevegourmand.png";
+import studioPhoto from "./assets/images/studioPhoto.png";
+import motpourmot from "./assets/images/motpourmot.png";
+import portfolio from "./assets/images/portfolio.png";
+import immo from "./assets/images/immo.png";
+
+//Tests: Cypress, Jest.js
+
+//Outils: MySQL, Workbench, Insomnia, Postman, VS Code, Git, Github, GitLab, Figma, CodeSandbox, Discord, Slack, Zoom, Google Workspace (Meet, Drive, Slides, Docs), Docker
 
 export const cardArray = [
   {
@@ -20,11 +25,10 @@ export const cardArray = [
     title: "Front",
     language: "React et JavaScript",
     skills: [
-      "Création de class et functional components",
+      "Création de functional components",
       "Utilisation des hooks: useState, useEffect, useMemo, useContext",
-      "Utilisation des librairies : styled-components, headless ui, tailwind",
-      "Création d'un store avec la librairie Redux",
-      "Intégration en HTML et CSS",
+      "Frameworks: React JS, jQuery, Twig, Express.js",
+      "Librairies: Redux, React Router, React Query, Axios, Mobiscroll, Nivo, Chart.js, Mapbox GL JS, Styled-components, Tailwind CSS",
     ],
   },
   {
@@ -35,7 +39,7 @@ export const cardArray = [
     title: "Back",
     language: "Node.js et Express",
     skills: [
-      "Création d'un serveur avec Express",
+      "Création d'un serveur avec Express.js",
       "Création d'une base de données en SQL avec MySQL",
       "Création d'une API REST",
       "Utilisation de différents outils comme Workbench et Postman",
@@ -47,11 +51,29 @@ export const cardArray = [
 export const projectArray = [
   {
     type: "Web",
+    name: "Mot pour mot",
+    src: motpourmot,
+    alt: 'Représentation du projet "Mot pour mot"',
+    description:
+      "Conception du site internet pour une officiante en cérémonie laïque",
+    tools: "React JS, Styled-components, WordPress Api, Figma",
+    url: "https://ceremonie-motpourmot.com/",
+  },
+  {
+    type: "Web app",
+    name: "36h-immo",
+    src: immo,
+    alt: 'Représentation du projet "36h-immo"',
+    description: "Développement d'une web application d'enchères immobilières",
+    tools: "Symfony (twig), React web component, vanilla JS, Tailwind CSS",
+    url: "https://www.36h-immo.com/",
+  },
+  {
+    type: "Web",
     name: "Le Rêve Gourmand",
     src: lerevegourmand,
     alt: 'Représentation du projet "Le Rêve Gourmand"',
-    description:
-      'Conception du site internet pour le food truck "Le Rêve Gourmand"',
+    description: "Conception du site internet pour le food truck",
     tools: "React JS, Styled-components, Figma",
     url: "https://lerevegourmand.fr/",
   },
@@ -64,53 +86,6 @@ export const projectArray = [
       "Développement de mon portfolio afin d'y exposer tous mes projets.",
     tools: "React JS, Styled-components, Figma",
     url: "https://florianpx.github.io/portfolio/",
-  },
-  // {
-  //   type: "Web App",
-  //   name: "MyBibli",
-  //   src: mybibli,
-  //   alt: "Image du projet MyBibli",
-  //   description: "Création d'une application web (partie front & back) afin de valider le Checkpoint4 de la Wild Code School",
-  //   tools: "React JS, Styled-components",
-  //   url: "",
-  // },
-  // {
-  //   type: "Web App",
-  //   name: "GodsAndGold",
-  //   src: ,
-  //   alt: "Image du projet ",
-  //   description: "Création d'une application avec le thème donné "Retour vers le futur" en équipe de 5 personnes durant 48h.",
-  //   tools: "React JS, Styled-components",
-  //   url: "",
-  // },
-  // {
-  //   type: "Web App",
-  //   name: "Neurolab",
-  //   src: "",
-  //   alt: "Image du projet Neurolab",
-  //   description:
-  //     "Création du site web Neurolab afin d'y intégrer une application Unity en équipe de 5 personnes pendant 9 semaines.",
-  //   tools: "HTML 5, CSS, JavaScript",
-  //   url: "/",
-  // },
-  // {
-  //   type: "Web App",
-  //   name: "Hackathon européen",
-  //   src: godsAndGold,
-  //   alt: "Image du projet Hackathon européen",
-  //   description: `Création d'une application avec le thème donné "Retour vers le futur" en équipe de 5 personnes durant 24h.`,
-  //   tools: "React JS, Api Rest, Workbench, SQL",
-  //   url: "/",
-  // },
-  {
-    type: "Web App",
-    name: "Mysterium",
-    src: mysterium,
-    alt: 'Représentation du projet "Mysterium"',
-    description:
-      "Adaptation du jeu de société en une application web en équipe de 5 personnes durant 6 semaines.",
-    tools: "React JS, CSS",
-    url: "https://mysterium-app.herokuapp.com/",
   },
   {
     type: "Web",
