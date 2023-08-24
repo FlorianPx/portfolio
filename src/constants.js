@@ -75,7 +75,7 @@ export const projectArray = [
     alt: 'Représentation du projet "Le Rêve Gourmand"',
     description: "Conception du site internet pour le food truck",
     tools: "React JS, Styled-components, Figma",
-    url: "https://lerevegourmand.fr/",
+    url: "https://lerevegourmand.netlify.app/",
   },
   {
     type: "Web",
