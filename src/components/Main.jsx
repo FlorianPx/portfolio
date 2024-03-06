@@ -50,8 +50,8 @@ const Title = styled.h1`
   color: #ffffff;
   margin: 0;
 
-  @media screen(min-width: ${devices.tablet}px) {
-    font-size: 60px;
+  @media screen and (min-width: ${devices.tablet}px) {
+    font-size: 50px;
     line-height: 70px;
   }
 `;
@@ -71,14 +71,18 @@ const Main = () => {
           Florian Poux
         </HeadTitle>
         <Title>
-          Hey ! Je m'appelle Florian, et je suis développeur front-end junior.
+          Hey ! Je m'appelle Florian, et je suis développeur front-end.
         </Title>
         <Paragraph>
-          Après avoir reçu la certification de développeur React/Node.js à la
+          {/* Après avoir reçu la certification de développeur React/Node.js à la
           Wild Code School de Bordeaux et réalisé un stage dans l'entreprise
-          TimeOne Performance de Pessac;
+          TimeOne Performance de Pessac; */}
+          Bienvenue sur ma page ! Vous y trouverez mes skills, quelques projets
+          réalisés seul ou en équipe.
+          {/* ainsi que mon CV si vous souhaitez en savoir plus sur moi. */}
           <br />
-          je suis actuellement en CDI dans l'agence web Eenov.
+          Bonne visite !
+          {/* je suis actuellement en CDI dans l'agence web Eenov. */}
         </Paragraph>
       </BlockText>
       <img

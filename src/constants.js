@@ -106,8 +106,8 @@ export const contactArray = [
     items: [
       {
         logo: email,
-        title: "florian.poux@hotmail.fr",
-        url: "mailto:florian.poux@hotmail.fr",
+        title: "florianpoux@icloud.com",
+        url: "mailto:florianpoux@icloud.com",
       },
     ],
   },

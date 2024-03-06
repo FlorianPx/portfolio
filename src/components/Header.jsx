@@ -27,7 +27,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY >= window.innerHeight - 200) {
+      if (window.scrollY >= window.innerHeight - 400) {
         setShowNav(true);
       } else {
         setShowNav(false);

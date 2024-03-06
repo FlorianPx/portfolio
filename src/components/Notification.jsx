@@ -112,11 +112,8 @@ const Notification = () => {
           />
         </svg>
       </BackgroundLogo>
-      <Content isClicked={isClicked}>
-        <HasBeenReadBullet
-          onClick={handleChange}
-          hasBeenClickBullet={hasBeenClickBullet}
-        />
+      <Content isClicked={isClicked} onMouseEnter={handleChange}>
+        <HasBeenReadBullet hasBeenClickBullet={hasBeenClickBullet} />
         <Paragraph onClick={handleChange} isClicked={isClicked}>
           Si mon profil vous suscite un intérêt, n'hésitez pas.{" "}
           <Link href="#contact">Contactez-moi !</Link>
